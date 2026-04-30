@@ -1,0 +1,192 @@
+.about-page {
+  padding-top: 80px;
+}
+
+/* Hero */
+.about-hero {
+  padding: 80px 0;
+  background: var(--gradient-hero);
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.about-hero__bg {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 20% 80%, rgba(240,64,128,0.06) 0%, transparent 50%),
+              radial-gradient(circle at 80% 20%, rgba(168,85,247,0.05) 0%, transparent 50%);
+}
+
+.about-hero__content {
+  position: relative;
+  z-index: 2;
+}
+
+.about-hero__title {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--gray-900);
+  margin-bottom: 20px;
+}
+
+.about-hero__subtitle {
+  font-size: 1.15rem;
+  color: var(--gray-500);
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* Story */
+.about-story__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.about-story__visual {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+}
+
+.about-story__circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: var(--gradient-cta);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: var(--shadow-xl), var(--shadow-glow);
+}
+
+.about-story__stat-card {
+  position: absolute;
+  background: white;
+  padding: 16px 24px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  text-align: center;
+}
+
+.about-story__stat-card--1 { top: 30px; right: 20px; }
+.about-story__stat-card--2 { bottom: 30px; left: 20px; }
+
+.about-story__stat-num {
+  display: block;
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--pink-600);
+}
+
+.about-story__stat-label {
+  font-size: 0.78rem;
+  color: var(--gray-500);
+}
+
+.about-story__text {
+  font-size: 1rem;
+  color: var(--gray-600);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+/* Values */
+.about-values {
+  background: var(--gradient-soft);
+}
+
+.about-values__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.about-value-card {
+  padding: 36px 24px;
+  text-align: center;
+}
+
+.about-value-card__icon {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-lg);
+  background: rgba(240,64,128,0.1);
+  color: var(--pink-500);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin: 0 auto 16px;
+}
+
+.about-value-card__title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: 8px;
+}
+
+.about-value-card__desc {
+  font-size: 0.88rem;
+  color: var(--gray-500);
+  line-height: 1.7;
+}
+
+/* Team */
+.about-team__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-team-card {
+  padding: 40px 24px;
+  text-align: center;
+}
+
+.about-team-card__avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--gradient-cta);
+  color: white;
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  box-shadow: var(--shadow-md);
+}
+
+.about-team-card__name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: 4px;
+}
+
+.about-team-card__role {
+  font-size: 0.85rem;
+  color: var(--pink-500);
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .about-hero__title { font-size: 2.2rem; }
+  .about-story__grid { grid-template-columns: 1fr; gap: 40px; }
+  .about-story__visual { height: 300px; }
+  .about-values__grid { grid-template-columns: 1fr 1fr; }
+  .about-team__grid { grid-template-columns: 1fr; max-width: 300px; }
+}
