@@ -13,6 +13,8 @@ import ConsultantDashboard from './pages/dashboards/ConsultantDashboard';
 import AdminDashboard from './pages/dashboards/AdminDashboard';
 import './App.css';
 
+import { Analytics } from '@vercel/analytics/react';
+
 function App() {
   return (
     <Router>
@@ -33,6 +35,7 @@ function App() {
         <Route path="/dashboard/consultant" element={<ConsultantDashboard />} />
         <Route path="/dashboard/admin" element={<AdminDashboard />} />
       </Routes>
+      <Analytics />
     </Router>
   );
 }
