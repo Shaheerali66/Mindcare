@@ -121,7 +121,7 @@ const HomePage = () => {
             viewport={{ once: true, margin: '-100px' }}
             variants={fadeUp}
           >
-            Why Choose <span className="accent-text">MindCare</span>?
+            Why Choose <span className="accent-text">High on Healing</span>?
           </motion.h2>
           <motion.p
             className="section-subtitle"
@@ -266,7 +266,7 @@ const HomePage = () => {
           >
             {[
               {
-                text: "I was drowning in exam stress and couldn't talk to anyone. MindCare matched me with an amazing counselor who understood exactly what I was going through.",
+                text: "I was drowning in exam stress and couldn't talk to anyone. High on Healing matched me with an amazing counselor who understood exactly what I was going through.",
                 name: 'Ayesha K.',
                 role: 'LUMS Student',
                 rating: 5,
@@ -280,7 +280,7 @@ const HomePage = () => {
               {
                 text: "As a psychology graduate, this platform gave me real-world experience and helped me earn while doing what I love — helping others.",
                 name: 'Fatima S.',
-                role: 'Counselor on MindCare',
+                role: 'Counselor on High on Healing',
                 rating: 5,
               },
             ].map((t, i) => (

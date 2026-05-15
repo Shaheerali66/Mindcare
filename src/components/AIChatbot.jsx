@@ -5,7 +5,7 @@ import './AIChatbot.css';
 const botResponses = {
   greetings: [
     "Hello! 😊 I'm glad you reached out. How are you feeling today?",
-    "Hi there! Welcome to MindCare. I'm here to listen. What's on your mind?",
+    "Hi there! Welcome to High on Healing. I'm here to listen. What's on your mind?",
     "Hey! 👋 It takes courage to seek help. How can I support you today?",
   ],
   stress: [
@@ -57,7 +57,7 @@ const AIChatbot = () => {
     {
       id: 1,
       type: 'bot',
-      text: "Hello! 👋 I'm your MindCare AI assistant. I'm here to help you with mood check-ins, basic guidance, and booking appointments.\n\nYou can ask me about:\n• Stress & anxiety management\n• Sleep issues\n• Exam pressure\n• Booking a counselor session\n\nHow are you feeling today?",
+      text: "Hello! 👋 I'm your High on Healing AI assistant. I'm here to help you with mood check-ins, basic guidance, and booking appointments.\n\nYou can ask me about:\n• Stress & anxiety management\n• Sleep issues\n• Exam pressure\n• Booking a counselor session\n\nHow are you feeling today?",
       time: new Date(),
     },
   ]);

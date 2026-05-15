@@ -48,6 +48,13 @@
   font-size: 16px;
 }
 
+.dashboard__logo-img {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+}
+
 .dashboard__logo-text {
   font-family: 'Outfit', sans-serif;
   font-size: 1.3rem;

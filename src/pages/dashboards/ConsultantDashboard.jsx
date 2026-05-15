@@ -2,12 +2,13 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
-  FaHeart, FaCalendarAlt, FaUsers, FaComments, FaMoneyBillWave,
+  FaCalendarAlt, FaUsers, FaComments, FaMoneyBillWave,
   FaSignOutAlt, FaClock, FaCheckCircle, FaCheck, FaTimes,
   FaVideo, FaPhone
 } from 'react-icons/fa';
 import { FiCalendar, FiUsers, FiMessageCircle, FiDollarSign, FiEdit, FiCpu } from 'react-icons/fi';
 import AIChatbot from '../../components/AIChatbot';
+import logoImg from '../../assets/logo.png';
 import './Dashboards.css';
 
 const ConsultantDashboard = () => {
@@ -70,8 +71,8 @@ const ConsultantDashboard = () => {
     <div className="dashboard dashboard--consultant" id="consultant-dashboard">
       <aside className="dashboard__sidebar dashboard__sidebar--consultant">
         <Link to="/" className="dashboard__logo">
-          <div className="dashboard__logo-icon"><FaHeart /></div>
-          <span className="dashboard__logo-text">Mind<span className="accent-text">Care</span></span>
+          <img src={logoImg} alt="High on Healing" className="dashboard__logo-img" />
+          <span className="dashboard__logo-text">High on <span className="accent-text">Healing</span></span>
         </Link>
 
         <nav className="dashboard__nav">
@@ -248,7 +249,7 @@ const ConsultantDashboard = () => {
               <div className="earnings-card glass-card">
                 <h3>Total Earned</h3>
                 <p className="earnings-card__amount">Rs. 82,000</p>
-                <p className="earnings-card__detail">Since joining MindCare</p>
+                <p className="earnings-card__detail">Since joining High on Healing</p>
               </div>
             </div>
           </section>

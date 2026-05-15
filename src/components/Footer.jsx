@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { FaHeart, FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import { FiMail, FiPhone, FiMapPin } from 'react-icons/fi';
+import logoImg from '../assets/logo.png';
 import './Footer.css';
 
 const Footer = () => {
@@ -12,8 +13,8 @@ const Footer = () => {
           {/* Brand */}
           <div className="footer__brand">
             <Link to="/" className="footer__logo">
-              <div className="footer__logo-icon"><FaHeart /></div>
-              <span className="footer__logo-text">Mind<span className="accent-text">Care</span></span>
+              <img src={logoImg} alt="High on Healing" className="footer__logo-img" />
+              <span className="footer__logo-text">High on <span className="accent-text">Healing</span></span>
             </Link>
             <p className="footer__tagline">
               Your safe space to talk, heal, and grow. Affordable mental health support for students.
@@ -53,7 +54,7 @@ const Footer = () => {
             <ul className="footer__list">
               <li className="footer__contact-item">
                 <FiMail className="footer__contact-icon" />
-                <span>support@mindcare.pk</span>
+                <span>support@highonhealing.pk</span>
               </li>
               <li className="footer__contact-item">
                 <FiPhone className="footer__contact-icon" />
@@ -68,7 +69,7 @@ const Footer = () => {
         </div>
 
         <div className="footer__bottom">
-          <p>&copy; {new Date().getFullYear()} MindCare. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} High on Healing. All rights reserved.</p>
           <p className="footer__made-with">Made with <FaHeart className="footer__heart" /> for mental wellness</p>
         </div>
       </div>

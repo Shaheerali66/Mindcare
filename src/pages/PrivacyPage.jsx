@@ -79,7 +79,7 @@ const PrivacyPage = () => {
 
             <div className="privacy-section">
               <h2>6. Contact Us</h2>
-              <p>If you have any questions about this Privacy Policy, please contact us at <a href="mailto:privacy@mindcare.pk">privacy@mindcare.pk</a>.</p>
+              <p>If you have any questions about this Privacy Policy, please contact us at <a href="mailto:privacy@highonhealing.pk">privacy@highonhealing.pk</a>.</p>
             </div>
 
             <div className="privacy-section privacy-section--updated">

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FiMenu, FiX } from 'react-icons/fi';
-import { FaHeart } from 'react-icons/fa';
+import logoImg from '../assets/logo.png';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -31,11 +31,9 @@ const Navbar = () => {
     <nav className={`navbar ${isScrolled ? 'navbar--scrolled' : ''}`} id="main-navbar">
       <div className="navbar__container container">
         <Link to="/" className="navbar__logo" id="nav-logo">
-          <div className="navbar__logo-icon">
-            <FaHeart />
-          </div>
+          <img src={logoImg} alt="High on Healing" className="navbar__logo-img" />
           <span className="navbar__logo-text">
-            Mind<span className="accent-text">Care</span>
+            High on <span className="accent-text">Healing</span>
           </span>
         </Link>
 

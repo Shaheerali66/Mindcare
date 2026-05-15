@@ -21,7 +21,7 @@ const AboutPage = () => {
         <div className="container">
           <motion.div initial="hidden" animate="visible" variants={stagger} className="about-hero__content">
             <motion.h1 variants={fadeUp} className="about-hero__title">
-              About <span className="accent-text">MindCare</span>
+              About <span className="accent-text">High on Healing</span>
             </motion.h1>
             <motion.p variants={fadeUp} className="about-hero__subtitle">
               We believe every student deserves access to affordable, judgment-free mental health support. Our mission is to bridge the gap between those who need help and those who can provide it.
@@ -51,7 +51,7 @@ const AboutPage = () => {
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
               <motion.h2 variants={fadeUp} className="section-title" style={{ textAlign: 'left' }}>Our Story</motion.h2>
               <motion.p variants={fadeUp} className="about-story__text">
-                MindCare was born from a simple observation: students in Pakistan are facing unprecedented mental health challenges, yet stigma, cost, and accessibility prevent most from seeking help.
+                High on Healing was born from a simple observation: students in Pakistan are facing unprecedented mental health challenges, yet stigma, cost, and accessibility prevent most from seeking help.
               </motion.p>
               <motion.p variants={fadeUp} className="about-story__text">
                 We built a platform that connects students struggling with anxiety, stress, and depression to psychology graduates and senior students who can offer empathetic, affordable support from the comfort of home.

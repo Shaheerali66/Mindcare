@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { FaHeart, FaEnvelope, FaLock, FaUserGraduate, FaUserMd, FaUserShield } from 'react-icons/fa';
+import { FaEnvelope, FaLock, FaUserGraduate, FaUserMd, FaUserShield } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import logoImg from '../assets/logo.png';
 import './AuthPages.css';
 
 const LoginPage = () => {
@@ -35,8 +36,8 @@ const LoginPage = () => {
         transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
       >
         <Link to="/" className="auth-card__logo">
-          <div className="auth-card__logo-icon"><FaHeart /></div>
-          <span className="auth-card__logo-text">Mind<span className="accent-text">Care</span></span>
+          <img src={logoImg} alt="High on Healing" className="auth-card__logo-img" />
+          <span className="auth-card__logo-text">High on <span className="accent-text">Healing</span></span>
         </Link>
 
         <h1 className="auth-card__title">Welcome Back</h1>

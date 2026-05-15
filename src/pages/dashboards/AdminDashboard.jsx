@@ -2,13 +2,14 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
-  FaHeart, FaUsers, FaUserMd, FaCalendarAlt, FaChartBar,
+  FaUsers, FaUserMd, FaCalendarAlt, FaChartBar,
   FaSignOutAlt, FaCheckCircle, FaTimesCircle, FaClock,
   FaEnvelope, FaUserGraduate, FaCheck, FaTimes, FaTrash,
   FaBan, FaReply
 } from 'react-icons/fa';
 import { FiUsers, FiUserCheck, FiBarChart2, FiInbox, FiSettings, FiCpu } from 'react-icons/fi';
 import AIChatbot from '../../components/AIChatbot';
+import logoImg from '../../assets/logo.png';
 import './Dashboards.css';
 
 const AdminDashboard = () => {
@@ -92,8 +93,8 @@ const AdminDashboard = () => {
     <div className="dashboard dashboard--admin" id="admin-dashboard">
       <aside className="dashboard__sidebar dashboard__sidebar--admin">
         <Link to="/" className="dashboard__logo">
-          <div className="dashboard__logo-icon"><FaHeart /></div>
-          <span className="dashboard__logo-text">Mind<span className="accent-text">Care</span></span>
+          <img src={logoImg} alt="High on Healing" className="dashboard__logo-img" />
+          <span className="dashboard__logo-text">High on <span className="accent-text">Healing</span></span>
         </Link>
 
         <nav className="dashboard__nav">
@@ -349,11 +350,11 @@ const AdminDashboard = () => {
                 <h3>General</h3>
                 <div className="settings-card__item">
                   <label>Platform Name</label>
-                  <input type="text" defaultValue="MindCare" />
+                  <input type="text" defaultValue="High on Healing" />
                 </div>
                 <div className="settings-card__item">
                   <label>Support Email</label>
-                  <input type="email" defaultValue="support@mindcare.pk" />
+                  <input type="email" defaultValue="support@highonhealing.pk" />
                 </div>
                 <button className="btn btn-primary" onClick={() => showToast('Settings saved!')}>Save Settings</button>
               </div>

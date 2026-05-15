@@ -2,12 +2,13 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
-  FaHeart, FaUserMd, FaCalendarAlt, FaComments, FaChartLine,
+  FaUserMd, FaCalendarAlt, FaComments, FaChartLine,
   FaRobot, FaSignOutAlt, FaSearch, FaStar, FaEnvelope, FaCheck,
   FaPhone, FaVideo, FaTimes
 } from 'react-icons/fa';
 import { FiUsers, FiCalendar, FiMessageCircle, FiActivity, FiCpu } from 'react-icons/fi';
 import AIChatbot from '../../components/AIChatbot';
+import logoImg from '../../assets/logo.png';
 import './Dashboards.css';
 
 const consultants = [
@@ -68,8 +69,8 @@ const StudentDashboard = () => {
       {/* Sidebar */}
       <aside className="dashboard__sidebar">
         <Link to="/" className="dashboard__logo">
-          <div className="dashboard__logo-icon"><FaHeart /></div>
-          <span className="dashboard__logo-text">Mind<span className="accent-text">Care</span></span>
+          <img src={logoImg} alt="High on Healing" className="dashboard__logo-img" />
+          <span className="dashboard__logo-text">High on <span className="accent-text">Healing</span></span>
         </Link>
 
         <nav className="dashboard__nav">

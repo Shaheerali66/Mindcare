@@ -43,7 +43,7 @@ const ContactPage = () => {
             {/* Info Cards */}
             <motion.div className="contact-info" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
               {[
-                { icon: <FiMail />, title: 'Email Us', detail: 'support@mindcare.pk', sub: 'We reply within 24 hours' },
+                { icon: <FiMail />, title: 'Email Us', detail: 'support@highonhealing.pk', sub: 'We reply within 24 hours' },
                 { icon: <FiPhone />, title: 'Call Us', detail: '+92 300 1234567', sub: 'Mon-Fri, 9 AM - 6 PM' },
                 { icon: <FiMapPin />, title: 'Visit Us', detail: 'Islamabad, Pakistan', sub: 'By appointment only' },
               ].map((item, i) => (
