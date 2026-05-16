@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import {
@@ -23,6 +23,19 @@ const staggerContainer = {
 };
 
 const HomePage = () => {
+  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+
+  const handleMouseMove = (e) => {
+    const { left, top, width, height } = e.currentTarget.getBoundingClientRect();
+    const x = (e.clientX - left - width / 2) / 30; 
+    const y = (e.clientY - top - height / 2) / 30;
+    setMousePos({ x, y });
+  };
+
+  const handleMouseLeave = () => {
+    setMousePos({ x: 0, y: 0 });
+  };
+
   return (
     <main className="home" id="homepage">
       {/* ============ HERO ============ */}
@@ -89,17 +102,28 @@ const HomePage = () => {
             initial={{ opacity: 0, scale: 0.85 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.4, duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
+            onMouseMove={handleMouseMove}
+            onMouseLeave={handleMouseLeave}
           >
             <div className="hero__illustration">
-              <div className="hero__card hero__card--1 float-animation">
+              <div 
+                className="hero__card hero__card--1 float-animation"
+                style={{ '--px': `${-mousePos.x * 1.5}px`, '--py': `${-mousePos.y * 1.5}px` }}
+              >
                 <FaShieldAlt className="hero__card-icon" />
                 <span>100% Private</span>
               </div>
-              <div className="hero__card hero__card--2 float-animation" style={{ animationDelay: '1s' }}>
+              <div 
+                className="hero__card hero__card--2 float-animation" 
+                style={{ animationDelay: '1s', '--px': `${-mousePos.x * 0.8}px`, '--py': `${-mousePos.y * 0.8}px` }}
+              >
                 <FaUserMd className="hero__card-icon" />
                 <span>Expert Counselors</span>
               </div>
-              <div className="hero__card hero__card--3 float-animation" style={{ animationDelay: '2s' }}>
+              <div 
+                className="hero__card hero__card--3 float-animation" 
+                style={{ animationDelay: '2s', '--px': `${-mousePos.x * 1.2}px`, '--py': `${-mousePos.y * 1.2}px` }}
+              >
                 <FaRobot className="hero__card-icon" />
                 <span>AI Assistant</span>
               </div>
