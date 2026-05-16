@@ -47,11 +47,9 @@
 }
 
 .navbar__logo-img {
-  width: 40px;
-  height: 40px;
-  border-radius: var(--radius-md);
-  object-fit: cover;
-  box-shadow: var(--shadow-md);
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
   transition: transform var(--transition-fast);
 }
 
