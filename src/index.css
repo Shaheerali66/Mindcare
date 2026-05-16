@@ -27,7 +27,7 @@
   /* Gradients */
   --gradient-primary: linear-gradient(135deg, var(--purple-dark) 0%, var(--purple-bright) 100%);
   --gradient-soft: linear-gradient(135deg, var(--lavender-100) 0%, var(--white) 100%);
-  --gradient-hero: linear-gradient(135deg, #e0d9f2 0%, #f4f2f9 40%, #ffffff 100%);
+  --gradient-hero: linear-gradient(to right, #ffffff 0%, #f4f2f9 50%, #e0d9f2 100%);
   --gradient-card: linear-gradient(145deg, rgba(255,255,255,1) 0%, rgba(252,251,254,1) 100%);
   --gradient-glass: linear-gradient(135deg, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.4) 100%);
   --gradient-cta: linear-gradient(135deg, var(--purple-dark) 0%, var(--purple-bright) 100%);
