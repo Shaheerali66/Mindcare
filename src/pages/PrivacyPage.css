@@ -11,13 +11,13 @@
 .privacy-hero__title {
   font-size: 3rem;
   font-weight: 900;
-  color: var(--gray-900);
+  color: var(--navy-main);
   margin-bottom: 16px;
 }
 
 .privacy-hero__subtitle {
   font-size: 1.15rem;
-  color: var(--gray-500);
+  color: var(--navy-500);
   max-width: 500px;
   margin: 0 auto;
 }
@@ -34,15 +34,15 @@
 .privacy-section h2 {
   font-size: 1.35rem;
   font-weight: 700;
-  color: var(--gray-900);
+  color: var(--navy-main);
   margin-bottom: 12px;
   padding-bottom: 8px;
-  border-bottom: 2px solid var(--pink-100);
+  border-bottom: 2px solid var(--teal-100);
 }
 
 .privacy-section p {
   font-size: 0.95rem;
-  color: var(--gray-600);
+  color: var(--navy-500);
   line-height: 1.8;
   margin-bottom: 12px;
 }
@@ -54,23 +54,23 @@
 
 .privacy-section ul li {
   font-size: 0.93rem;
-  color: var(--gray-600);
+  color: var(--navy-500);
   line-height: 1.8;
   margin-bottom: 6px;
 }
 
 .privacy-section a {
-  color: var(--pink-600);
+  color: var(--teal-600);
   font-weight: 600;
   text-decoration: underline;
   text-underline-offset: 3px;
 }
 
 .privacy-section--updated {
-  background: var(--pink-50);
+  background: var(--teal-50);
   padding: 16px 24px;
   border-radius: var(--radius-md);
-  border-left: 4px solid var(--pink-400);
+  border-left: 4px solid var(--teal-400);
 }
 
 @media (max-width: 768px) {

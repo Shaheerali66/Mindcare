@@ -25,7 +25,7 @@
 .hero__shape--1 {
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, rgba(240,64,128,0.08) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(58,173,168,0.08) 0%, transparent 70%);
   top: -100px;
   right: -100px;
   animation: float 8s ease-in-out infinite;
@@ -34,7 +34,7 @@
 .hero__shape--2 {
   width: 300px;
   height: 300px;
-  background: radial-gradient(circle, rgba(168,85,247,0.07) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(109,213,176,0.07) 0%, transparent 70%);
   bottom: 50px;
   left: -50px;
   animation: float 10s ease-in-out infinite reverse;
@@ -43,7 +43,7 @@
 .hero__shape--3 {
   width: 200px;
   height: 200px;
-  background: radial-gradient(circle, rgba(240,64,128,0.06) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(58,173,168,0.06) 0%, transparent 70%);
   top: 40%;
   left: 30%;
   animation: float 7s ease-in-out infinite;
@@ -72,14 +72,14 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(240,64,128,0.1);
-  color: var(--pink-600);
+  background: rgba(58,173,168,0.1);
+  color: var(--teal-600);
   padding: 8px 20px;
   border-radius: var(--radius-full);
   font-size: 0.85rem;
   font-weight: 600;
   margin-bottom: 24px;
-  border: 1px solid rgba(240,64,128,0.15);
+  border: 1px solid rgba(58,173,168,0.15);
 }
 
 .hero__badge-icon {
@@ -90,7 +90,7 @@
 .hero__title {
   font-size: 3.5rem;
   font-weight: 900;
-  color: var(--gray-900);
+  color: var(--navy-main);
   line-height: 1.1;
   margin-bottom: 24px;
   letter-spacing: -0.02em;
@@ -105,7 +105,7 @@
 
 .hero__subtitle {
   font-size: 1.15rem;
-  color: var(--gray-500);
+  color: var(--navy-500);
   line-height: 1.8;
   margin-bottom: 36px;
   max-width: 500px;
@@ -136,19 +136,19 @@
   font-family: 'Outfit', sans-serif;
   font-size: 1.6rem;
   font-weight: 800;
-  color: var(--pink-600);
+  color: var(--teal-600);
 }
 
 .hero__stat-label {
   font-size: 0.8rem;
-  color: var(--gray-500);
+  color: var(--navy-500);
   font-weight: 500;
 }
 
 .hero__stat-divider {
   width: 1px;
   height: 40px;
-  background: var(--gray-200);
+  background: var(--navy-100);
 }
 
 /* Hero Visual */
@@ -191,13 +191,13 @@
   gap: 10px;
   font-size: 0.88rem;
   font-weight: 600;
-  color: var(--gray-700);
+  color: var(--navy-700);
   border: 1px solid rgba(255,255,255,0.9);
 }
 
 .hero__card-icon {
   font-size: 18px;
-  color: var(--pink-500);
+  color: var(--teal-500);
 }
 
 .hero__card--1 {
@@ -246,13 +246,13 @@
 .feature-card__title {
   font-size: 1.15rem;
   font-weight: 700;
-  color: var(--gray-900);
+  color: var(--navy-main);
   margin-bottom: 10px;
 }
 
 .feature-card__desc {
   font-size: 0.9rem;
-  color: var(--gray-500);
+  color: var(--navy-500);
   line-height: 1.7;
 }
 
@@ -297,13 +297,13 @@
 .step-card__title {
   font-size: 1.2rem;
   font-weight: 700;
-  color: var(--gray-900);
+  color: var(--navy-main);
   margin-bottom: 10px;
 }
 
 .step-card__desc {
   font-size: 0.9rem;
-  color: var(--gray-500);
+  color: var(--navy-500);
   line-height: 1.7;
   max-width: 280px;
   margin: 0 auto;
@@ -328,13 +328,13 @@
 
 .testimonial-card__quote {
   font-size: 28px;
-  color: var(--pink-200);
+  color: var(--teal-200);
   margin-bottom: 16px;
 }
 
 .testimonial-card__text {
   font-size: 0.92rem;
-  color: var(--gray-600);
+  color: var(--navy-500);
   line-height: 1.8;
   margin-bottom: 20px;
   font-style: italic;
@@ -372,13 +372,13 @@
 
 .testimonial-card__name {
   font-weight: 700;
-  color: var(--gray-800);
+  color: var(--navy-main);
   font-size: 0.92rem;
 }
 
 .testimonial-card__role {
   font-size: 0.8rem;
-  color: var(--gray-400);
+  color: var(--navy-300);
 }
 
 /* ============ CTA BANNER ============ */
@@ -425,7 +425,7 @@
 
 .cta-banner__btn {
   background: white !important;
-  color: var(--pink-600) !important;
+  color: var(--teal-600) !important;
   box-shadow: 0 8px 30px rgba(0,0,0,0.15) !important;
 }
 

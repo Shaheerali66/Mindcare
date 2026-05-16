@@ -2,51 +2,47 @@
 
 /* ============ DESIGN TOKENS ============ */
 :root {
-  /* Primary Palette */
-  --pink-50: #fef1f6;
-  --pink-100: #fde6ef;
-  --pink-200: #fcc8df;
-  --pink-300: #faa0c5;
-  --pink-400: #f76da2;
-  --pink-500: #f04080;
-  --pink-600: #e0205f;
-  --pink-700: #c21249;
-  --pink-800: #a1133d;
-  --pink-900: #861536;
+  /* Primary Palette (Teal) */
+  --teal-50: #f0faf9;
+  --teal-100: #d6f0ef;
+  --teal-200: #aee0dd;
+  --teal-300: #7bcac6;
+  --teal-400: #3aada8; /* Primary */
+  --teal-500: #29938f;
+  --teal-600: #1a8a8a; /* Dark Accent */
+  --teal-700: #196f70;
+  --teal-800: #17595a;
+  --teal-900: #164a4b;
 
-  /* Neutral Palette */
+  /* Accent & Decorative */
+  --mint-green: #6dd5b0;
+  --gold-main: #e8c14a;
+
+  /* Neutral Palette (Navy & Gray) */
   --white: #ffffff;
-  --gray-50: #f9fafb;
-  --gray-100: #f3f4f6;
-  --gray-200: #e5e7eb;
-  --gray-300: #d1d5db;
-  --gray-400: #9ca3af;
-  --gray-500: #6b7280;
-  --gray-600: #4b5563;
-  --gray-700: #374151;
-  --gray-800: #1f2937;
-  --gray-900: #111827;
-
-  /* Accent */
-  --purple-400: #c084fc;
-  --purple-500: #a855f7;
-  --blue-400: #60a5fa;
+  --page-bg: #f2f2f0;
+  --navy-100: #d5d9de;
+  --navy-300: #93a0b1;
+  --navy-500: #576881;
+  --navy-700: #3c4c63;
+  --navy-main: #2d3b4e; /* Text & Headings */
+  --navy-900: #1f2937;
 
   /* Gradients */
-  --gradient-primary: linear-gradient(135deg, var(--pink-400) 0%, var(--pink-600) 50%, var(--pink-800) 100%);
-  --gradient-soft: linear-gradient(135deg, var(--pink-50) 0%, var(--pink-100) 50%, var(--white) 100%);
-  --gradient-hero: linear-gradient(160deg, #fff0f5 0%, #ffe0ec 30%, #ffd6e7 60%, #fff5f8 100%);
-  --gradient-card: linear-gradient(145deg, rgba(255,255,255,0.9) 0%, rgba(254,241,246,0.7) 100%);
-  --gradient-glass: linear-gradient(135deg, rgba(255,255,255,0.25) 0%, rgba(255,255,255,0.05) 100%);
-  --gradient-cta: linear-gradient(135deg, #f04080 0%, #c21249 100%);
-  --gradient-pricing: linear-gradient(180deg, #fff5f8 0%, #ffffff 100%);
+  --gradient-primary: linear-gradient(135deg, var(--teal-400) 0%, var(--teal-600) 100%);
+  --gradient-soft: linear-gradient(135deg, var(--teal-50) 0%, var(--white) 100%);
+  --gradient-hero: linear-gradient(160deg, #f2f2f0 0%, #e6f5f4 50%, #f2f2f0 100%);
+  --gradient-card: linear-gradient(145deg, rgba(255,255,255,1) 0%, rgba(245,250,249,1) 100%);
+  --gradient-glass: linear-gradient(135deg, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.4) 100%);
+  --gradient-cta: linear-gradient(135deg, var(--teal-400) 0%, var(--teal-600) 100%);
+  --gradient-pricing: linear-gradient(180deg, #f2f2f0 0%, #ffffff 100%);
 
   /* Shadows */
-  --shadow-sm: 0 1px 3px rgba(240, 64, 128, 0.06);
-  --shadow-md: 0 4px 16px rgba(240, 64, 128, 0.1);
-  --shadow-lg: 0 8px 32px rgba(240, 64, 128, 0.12);
-  --shadow-xl: 0 16px 48px rgba(240, 64, 128, 0.16);
-  --shadow-glow: 0 0 40px rgba(240, 64, 128, 0.2);
+  --shadow-sm: 0 1px 3px rgba(58, 173, 168, 0.08);
+  --shadow-md: 0 4px 16px rgba(58, 173, 168, 0.12);
+  --shadow-lg: 0 8px 32px rgba(58, 173, 168, 0.16);
+  --shadow-xl: 0 16px 48px rgba(58, 173, 168, 0.2);
+  --shadow-glow: 0 0 40px rgba(109, 213, 176, 0.25);
 
   /* Border Radius */
   --radius-sm: 8px;
@@ -78,8 +74,8 @@ html {
 
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  color: var(--gray-800);
-  background: var(--white);
+  color: var(--navy-main);
+  background: var(--page-bg);
   line-height: 1.6;
   overflow-x: hidden;
 }
@@ -88,6 +84,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Outfit', sans-serif;
   line-height: 1.2;
   font-weight: 700;
+  color: var(--navy-main);
 }
 
 a {
@@ -130,14 +127,14 @@ input, textarea, select {
 .section-title {
   font-size: 2.75rem;
   font-weight: 800;
-  color: var(--gray-900);
+  color: var(--navy-main);
   text-align: center;
   margin-bottom: 16px;
 }
 
 .section-subtitle {
   font-size: 1.15rem;
-  color: var(--gray-500);
+  color: var(--navy-500);
   text-align: center;
   max-width: 600px;
   margin: 0 auto 60px;
@@ -182,24 +179,24 @@ input, textarea, select {
 .btn-primary {
   background: var(--gradient-cta);
   color: var(--white);
-  box-shadow: var(--shadow-md), 0 0 0 0 rgba(240, 64, 128, 0.4);
+  box-shadow: var(--shadow-md), 0 0 0 0 rgba(58, 173, 168, 0.4);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: var(--shadow-lg), 0 0 20px rgba(240, 64, 128, 0.3);
+  box-shadow: var(--shadow-lg), 0 0 20px rgba(58, 173, 168, 0.3);
 }
 
 .btn-secondary {
   background: var(--white);
-  color: var(--pink-600);
-  border: 2px solid var(--pink-200);
+  color: var(--teal-600);
+  border: 2px solid var(--teal-200);
   box-shadow: var(--shadow-sm);
 }
 
 .btn-secondary:hover {
-  background: var(--pink-50);
-  border-color: var(--pink-400);
+  background: var(--teal-50);
+  border-color: var(--teal-400);
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
 }
@@ -214,7 +211,7 @@ input, textarea, select {
   background: var(--gradient-card);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(58, 173, 168, 0.2);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
   transition: all var(--transition-normal);
