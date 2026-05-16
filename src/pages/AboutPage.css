@@ -14,8 +14,8 @@
 .about-hero__bg {
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 20% 80%, rgba(58,173,168,0.06) 0%, transparent 50%),
-              radial-gradient(circle at 80% 20%, rgba(109,213,176,0.05) 0%, transparent 50%);
+  background: radial-gradient(circle at 20% 80%, rgba(155,142,196,0.06) 0%, transparent 50%),
+              radial-gradient(circle at 80% 20%, rgba(168,85,247,0.05) 0%, transparent 50%);
 }
 
 .about-hero__content {
@@ -26,13 +26,13 @@
 .about-hero__title {
   font-size: 3rem;
   font-weight: 900;
-  color: var(--navy-main);
+  color: var(--charcoal-main);
   margin-bottom: 20px;
 }
 
 .about-hero__subtitle {
   font-size: 1.15rem;
-  color: var(--navy-500);
+  color: var(--charcoal-500);
   max-width: 650px;
   margin: 0 auto;
   line-height: 1.8;
@@ -83,17 +83,17 @@
   font-family: 'Outfit', sans-serif;
   font-size: 1.4rem;
   font-weight: 800;
-  color: var(--teal-600);
+  color: var(--purple-dark);
 }
 
 .about-story__stat-label {
   font-size: 0.78rem;
-  color: var(--navy-500);
+  color: var(--charcoal-500);
 }
 
 .about-story__text {
   font-size: 1rem;
-  color: var(--navy-500);
+  color: var(--charcoal-500);
   line-height: 1.8;
   margin-bottom: 16px;
 }
@@ -118,8 +118,8 @@
   width: 56px;
   height: 56px;
   border-radius: var(--radius-lg);
-  background: rgba(58,173,168,0.1);
-  color: var(--teal-500);
+  background: rgba(155,142,196,0.1);
+  color: var(--purple-dark);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -130,13 +130,13 @@
 .about-value-card__title {
   font-size: 1.05rem;
   font-weight: 700;
-  color: var(--navy-main);
+  color: var(--charcoal-main);
   margin-bottom: 8px;
 }
 
 .about-value-card__desc {
   font-size: 0.88rem;
-  color: var(--navy-500);
+  color: var(--charcoal-500);
   line-height: 1.7;
 }
 
@@ -173,13 +173,13 @@
 .about-team-card__name {
   font-size: 1.05rem;
   font-weight: 700;
-  color: var(--navy-main);
+  color: var(--charcoal-main);
   margin-bottom: 4px;
 }
 
 .about-team-card__role {
   font-size: 0.85rem;
-  color: var(--teal-500);
+  color: var(--purple-dark);
   font-weight: 500;
 }
 

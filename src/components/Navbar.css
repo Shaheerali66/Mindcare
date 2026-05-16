@@ -6,11 +6,11 @@
   z-index: 1000;
   padding: 16px 0;
   transition: all var(--transition-normal);
-  background: var(--teal-600);
+  background: var(--purple-dark);
 }
 
 .navbar--scrolled {
-  background: rgba(26, 138, 138, 0.95);
+  background: rgba(108, 92, 231, 0.95);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -85,12 +85,12 @@
 }
 
 .navbar__link:hover {
-  color: var(--mint-green);
-  background: rgba(109, 213, 176, 0.1);
+  color: var(--purple-bright);
+  background: rgba(168, 85, 247, 0.1);
 }
 
 .navbar__link--active {
-  color: var(--mint-green);
+  color: var(--purple-bright);
   font-weight: 600;
 }
 
@@ -149,7 +149,7 @@
     width: 280px;
     height: 100vh;
     flex-direction: column;
-    background: var(--teal-600);
+    background: var(--purple-dark);
     padding: 100px 30px 30px;
     gap: 8px;
     transition: right var(--transition-normal);

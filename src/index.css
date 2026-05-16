@@ -2,47 +2,43 @@
 
 /* ============ DESIGN TOKENS ============ */
 :root {
-  /* Primary Palette (Teal) */
-  --teal-50: #f0faf9;
-  --teal-100: #d6f0ef;
-  --teal-200: #aee0dd;
-  --teal-300: #7bcac6;
-  --teal-400: #3aada8; /* Primary */
-  --teal-500: #29938f;
-  --teal-600: #1a8a8a; /* Dark Accent */
-  --teal-700: #196f70;
-  --teal-800: #17595a;
-  --teal-900: #164a4b;
+  /* Primary Palette (Lavender) */
+  --lavender-50: #fcfbfe;
+  --lavender-100: #f4f2f9;
+  --lavender-200: #e8e3f5; /* Page bg */
+  --lavender-300: #c4b5e8; /* Borders */
+  --lavender-primary: #9b8ec4; /* Primary */
+  --purple-dark: #6c5ce7; /* Dark Accent / Navbar */
+  --purple-bright: #a855f7; /* Highlights / Glows */
 
   /* Accent & Decorative */
-  --mint-green: #6dd5b0;
-  --gold-main: #e8c14a;
+  --gold-main: #f59e0b;
 
-  /* Neutral Palette (Navy & Gray) */
+  /* Neutral Palette (Charcoal) */
   --white: #ffffff;
-  --page-bg: #f2f2f0;
-  --navy-100: #d5d9de;
-  --navy-300: #93a0b1;
-  --navy-500: #576881;
-  --navy-700: #3c4c63;
-  --navy-main: #2d3b4e; /* Text & Headings */
-  --navy-900: #1f2937;
+  --page-bg: #e8e3f5;
+  --charcoal-100: #e2e1e6;
+  --charcoal-300: #8f8d97;
+  --charcoal-500: #4a4856;
+  --charcoal-700: #2d2b38;
+  --charcoal-main: #1e1b2e; /* Text & Headings */
+  --charcoal-900: #0f0d17;
 
   /* Gradients */
-  --gradient-primary: linear-gradient(135deg, var(--teal-400) 0%, var(--teal-600) 100%);
-  --gradient-soft: linear-gradient(135deg, var(--teal-50) 0%, var(--white) 100%);
-  --gradient-hero: linear-gradient(160deg, #f2f2f0 0%, #e6f5f4 50%, #f2f2f0 100%);
-  --gradient-card: linear-gradient(145deg, rgba(255,255,255,1) 0%, rgba(245,250,249,1) 100%);
+  --gradient-primary: linear-gradient(135deg, var(--purple-dark) 0%, var(--purple-bright) 100%);
+  --gradient-soft: linear-gradient(135deg, var(--lavender-100) 0%, var(--white) 100%);
+  --gradient-hero: linear-gradient(160deg, #e8e3f5 0%, #f4f2f9 50%, #e8e3f5 100%);
+  --gradient-card: linear-gradient(145deg, rgba(255,255,255,1) 0%, rgba(252,251,254,1) 100%);
   --gradient-glass: linear-gradient(135deg, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.4) 100%);
-  --gradient-cta: linear-gradient(135deg, var(--teal-400) 0%, var(--teal-600) 100%);
-  --gradient-pricing: linear-gradient(180deg, #f2f2f0 0%, #ffffff 100%);
+  --gradient-cta: linear-gradient(135deg, var(--purple-dark) 0%, var(--purple-bright) 100%);
+  --gradient-pricing: linear-gradient(180deg, #e8e3f5 0%, #ffffff 100%);
 
   /* Shadows */
-  --shadow-sm: 0 1px 3px rgba(58, 173, 168, 0.08);
-  --shadow-md: 0 4px 16px rgba(58, 173, 168, 0.12);
-  --shadow-lg: 0 8px 32px rgba(58, 173, 168, 0.16);
-  --shadow-xl: 0 16px 48px rgba(58, 173, 168, 0.2);
-  --shadow-glow: 0 0 40px rgba(109, 213, 176, 0.25);
+  --shadow-sm: 0 1px 3px rgba(108, 92, 231, 0.08);
+  --shadow-md: 0 4px 16px rgba(108, 92, 231, 0.12);
+  --shadow-lg: 0 8px 32px rgba(108, 92, 231, 0.16);
+  --shadow-xl: 0 16px 48px rgba(108, 92, 231, 0.2);
+  --shadow-glow: 0 0 40px rgba(168, 85, 247, 0.3);
 
   /* Border Radius */
   --radius-sm: 8px;
@@ -74,7 +70,7 @@ html {
 
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  color: var(--navy-main);
+  color: var(--charcoal-main);
   background: var(--page-bg);
   line-height: 1.6;
   overflow-x: hidden;
@@ -84,7 +80,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Outfit', sans-serif;
   line-height: 1.2;
   font-weight: 700;
-  color: var(--navy-main);
+  color: var(--charcoal-main);
 }
 
 a {
@@ -127,14 +123,14 @@ input, textarea, select {
 .section-title {
   font-size: 2.75rem;
   font-weight: 800;
-  color: var(--navy-main);
+  color: var(--charcoal-main);
   text-align: center;
   margin-bottom: 16px;
 }
 
 .section-subtitle {
   font-size: 1.15rem;
-  color: var(--navy-500);
+  color: var(--charcoal-500);
   text-align: center;
   max-width: 600px;
   margin: 0 auto 60px;
@@ -179,24 +175,24 @@ input, textarea, select {
 .btn-primary {
   background: var(--gradient-cta);
   color: var(--white);
-  box-shadow: var(--shadow-md), 0 0 0 0 rgba(58, 173, 168, 0.4);
+  box-shadow: var(--shadow-md), 0 0 0 0 rgba(108, 92, 231, 0.4);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: var(--shadow-lg), 0 0 20px rgba(58, 173, 168, 0.3);
+  box-shadow: var(--shadow-lg), 0 0 20px rgba(168, 85, 247, 0.3);
 }
 
 .btn-secondary {
   background: var(--white);
-  color: var(--teal-600);
-  border: 2px solid var(--teal-200);
+  color: var(--purple-dark);
+  border: 2px solid var(--lavender-300);
   box-shadow: var(--shadow-sm);
 }
 
 .btn-secondary:hover {
-  background: var(--teal-50);
-  border-color: var(--teal-400);
+  background: var(--lavender-50);
+  border-color: var(--purple-dark);
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
 }
@@ -208,10 +204,10 @@ input, textarea, select {
 
 /* ============ GLASS CARD ============ */
 .glass-card {
-  background: var(--gradient-card);
+  background: var(--white);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(58, 173, 168, 0.2);
+  border: 1px solid var(--lavender-300);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
   transition: all var(--transition-normal);
