@@ -37,7 +37,7 @@ const SignupPage = () => {
       >
         <Link to="/" className="auth-card__logo">
           <img src={logoImg} alt="High on Healing" className="auth-card__logo-img" />
-          <span className="auth-card__logo-text">High on <span className="accent-text">Healing</span></span>
+          <span className="auth-card__logo-text">High on Healing</span>
         </Link>
 
         <h1 className="auth-card__title">Create Account</h1>

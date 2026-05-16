@@ -72,7 +72,7 @@ const ConsultantDashboard = () => {
       <aside className="dashboard__sidebar dashboard__sidebar--consultant">
         <Link to="/" className="dashboard__logo">
           <img src={logoImg} alt="High on Healing" className="dashboard__logo-img" />
-          <span className="dashboard__logo-text">High on <span className="accent-text">Healing</span></span>
+          <span className="dashboard__logo-text">High on Healing</span>
         </Link>
 
         <nav className="dashboard__nav">
