@@ -33,7 +33,7 @@ const Navbar = () => {
         <Link to="/" className="navbar__logo" id="nav-logo">
           <img src={logoImg} alt="High on Healing" className="navbar__logo-img" />
           <span className="navbar__logo-text">
-            High on <span className="accent-text">Healing</span>
+            High on Healing
           </span>
         </Link>
 

@@ -79,19 +79,19 @@
   border-radius: var(--radius-full);
   font-size: 0.9rem;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--white);
   transition: all var(--transition-fast);
   position: relative;
 }
 
 .navbar__link:hover {
-  color: var(--purple-bright);
-  background: rgba(168, 85, 247, 0.1);
+  color: var(--white);
+  font-weight: 700;
 }
 
 .navbar__link--active {
-  color: var(--purple-bright);
-  font-weight: 600;
+  color: var(--white);
+  font-weight: 700;
 }
 
 .navbar__link-indicator {
