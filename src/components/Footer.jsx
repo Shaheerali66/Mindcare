@@ -14,7 +14,7 @@ const Footer = () => {
           <div className="footer__brand">
             <Link to="/" className="footer__logo">
               <img src={logoImg} alt="High on Healing" className="footer__logo-img" />
-              <span className="footer__logo-text">High on <span className="accent-text">Healing</span></span>
+              <span className="footer__logo-text">High on Healing</span>
             </Link>
             <p className="footer__tagline">
               Your safe space to talk, heal, and grow. Affordable mental health support for students.
