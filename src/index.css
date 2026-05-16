@@ -238,8 +238,8 @@ input, textarea, select {
 
 /* ============ ANIMATIONS ============ */
 @keyframes float {
-  0%, 100% { transform: translate(var(--px, 0px), var(--py, 0px)) translateY(0px); }
-  50% { transform: translate(var(--px, 0px), var(--py, 0px)) translateY(-20px); }
+  0%, 100% { transform: translate(calc(-50% + var(--px, 0px)), calc(-50% + var(--py, 0px))) translateY(0px); }
+  50% { transform: translate(calc(-50% + var(--px, 0px)), calc(-50% + var(--py, 0px))) translateY(-20px); }
 }
 
 @keyframes pulse-glow {

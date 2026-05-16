@@ -23,17 +23,57 @@ const staggerContainer = {
 };
 
 const HomePage = () => {
-  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+  const containerRef = useRef(null);
+  const cardsRef = useRef([]);
+  const targetAngleRef = useRef(0);
+  const currentAngleRef = useRef(0);
+  const isHoveredRef = useRef(false);
+
+  useEffect(() => {
+    let animationFrameId;
+    const animate = () => {
+      if (isHoveredRef.current) {
+        let diff = targetAngleRef.current - currentAngleRef.current;
+        diff = ((diff + 180) % 360 + 360) % 360 - 180;
+        currentAngleRef.current += diff * 0.05; 
+      } else {
+        currentAngleRef.current += 0.3; 
+      }
+
+      cardsRef.current.forEach((card, index) => {
+        if (card) {
+          const radius = window.innerWidth < 768 ? 130 : 200;
+          const angleOffset = index * 120;
+          const totalAngle = currentAngleRef.current + angleOffset;
+          const rad = totalAngle * (Math.PI / 180);
+          const x = Math.cos(rad) * radius;
+          const y = Math.sin(rad) * radius;
+          card.style.setProperty('--px', `${x}px`);
+          card.style.setProperty('--py', `${y}px`);
+        }
+      });
+
+      animationFrameId = requestAnimationFrame(animate);
+    };
+    animate();
+    return () => cancelAnimationFrame(animationFrameId);
+  }, []);
 
   const handleMouseMove = (e) => {
-    const { left, top, width, height } = e.currentTarget.getBoundingClientRect();
-    const x = (e.clientX - left - width / 2) / 30; 
-    const y = (e.clientY - top - height / 2) / 30;
-    setMousePos({ x, y });
+    if (!containerRef.current) return;
+    const { left, top, width, height } = containerRef.current.getBoundingClientRect();
+    const cx = left + width / 2;
+    const cy = top + height / 2;
+    const angleRad = Math.atan2(e.clientY - cy, e.clientX - cx);
+    targetAngleRef.current = angleRad * (180 / Math.PI);
+  };
+
+  const handleMouseEnter = () => {
+    isHoveredRef.current = true;
   };
 
   const handleMouseLeave = () => {
-    setMousePos({ x: 0, y: 0 });
+    isHoveredRef.current = false;
   };
 
   return (
@@ -99,30 +139,34 @@ const HomePage = () => {
 
           <motion.div
             className="hero__visual"
+            ref={containerRef}
             initial={{ opacity: 0, scale: 0.85 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.4, duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
             onMouseMove={handleMouseMove}
+            onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
             <div className="hero__illustration">
               <div 
                 className="hero__card hero__card--1 float-animation"
-                style={{ '--px': `${-mousePos.x * 1.5}px`, '--py': `${-mousePos.y * 1.5}px` }}
+                ref={el => cardsRef.current[0] = el}
               >
                 <FaShieldAlt className="hero__card-icon" />
                 <span>100% Private</span>
               </div>
               <div 
                 className="hero__card hero__card--2 float-animation" 
-                style={{ animationDelay: '1s', '--px': `${-mousePos.x * 0.8}px`, '--py': `${-mousePos.y * 0.8}px` }}
+                ref={el => cardsRef.current[1] = el}
+                style={{ animationDelay: '1s' }}
               >
                 <FaUserMd className="hero__card-icon" />
                 <span>Expert Counselors</span>
               </div>
               <div 
                 className="hero__card hero__card--3 float-animation" 
-                style={{ animationDelay: '2s', '--px': `${-mousePos.x * 1.2}px`, '--py': `${-mousePos.y * 1.2}px` }}
+                ref={el => cardsRef.current[2] = el}
+                style={{ animationDelay: '2s' }}
               >
                 <FaRobot className="hero__card-icon" />
                 <span>AI Assistant</span>
