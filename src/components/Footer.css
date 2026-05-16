@@ -46,10 +46,9 @@
 }
 
 .footer__logo-img {
-  width: 36px;
-  height: 36px;
-  border-radius: var(--radius-sm);
-  object-fit: cover;
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
 }
 
 .footer__logo-text {
