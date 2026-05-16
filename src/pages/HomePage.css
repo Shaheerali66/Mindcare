@@ -328,9 +328,13 @@
 }
 
 .testimonial-card__quote {
-  font-size: 28px;
-  color: var(--lavender-200);
+  font-size: 32px;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   margin-bottom: 16px;
+  display: inline-block;
 }
 
 .testimonial-card__text {
